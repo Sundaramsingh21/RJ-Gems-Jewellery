@@ -3,10 +3,17 @@ import './cart.css'
 import { useContext } from 'react'
 import { StoreContext } from '../../Context/StoreContext'
 import { useNavigate } from 'react-router-dom'
+import {toast} from 'react-toastify'
+
 const cart = () => {
 
   const { cartItems, JewellryData, RemoveFromCart, getTotalCartAmount, url } = useContext(StoreContext)
   const navigate = useNavigate();
+
+    const islogin =()=>{
+    toast.error("Please login or add item")
+  }
+
 
 
   return (
@@ -71,7 +78,7 @@ const cart = () => {
             </div>
 
           </div>
-          {getTotalCartAmount() > 0 ? <button onClick={() => navigate('/order')}>Proceed To Checkout</button> : <button>Proceed To Checkout</button>}
+          {getTotalCartAmount() > 0 ? <button onClick={() => navigate('/order')}>Proceed To Checkout</button> : <button onClick={islogin} >Proceed To Checkout</button>}
 
         </div>
         <div className="cart-promocode">
