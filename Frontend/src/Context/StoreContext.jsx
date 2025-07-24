@@ -7,7 +7,7 @@ const StoreContextProvider = (props) => {
     const [LoaderF, setLoaderF] = useState(false)
     const [cartItems, setCartItems] = useState({});
 
-    const url = "http://localhost:4000";
+    const url = "https://rj-gems-backend.onrender.com";
 
     const [Token, setToken] = useState("")
     const [JewellryData, setJewellryData] = useState([])
