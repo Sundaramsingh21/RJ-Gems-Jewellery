@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <div>
             <marquee scrollamount="8" behavior="scroll" direction="left">
-                Shop exquisite handcrafted jewelry at unbeatable prices. India’s trusted destination for timeless elegance — only at RJ-GEMS.
+                Shop exquisite handcrafted jewellery at unbeatable prices. India’s trusted destination for timeless elegance — only at RJ-GEMS.
             </marquee>
 
             <div className='header'>
